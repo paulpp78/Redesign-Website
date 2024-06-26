@@ -1,149 +1,151 @@
-# SaeFront
+# 🌐 Redesign-Website
 
-Ce projet a été généré avec [Angular CLI](https://github.com/angular/angular-cli) version 16.2.3.
+![Angular](https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white)
+![Node.js](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white)
+![npm](https://img.shields.io/badge/npm-CB3837?style=for-the-badge&logo=npm&logoColor=white)
+![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
 
-## Prérequis
+## 📋 Prerequisites
 
-Avant de cloner ce projet, assurez-vous d'avoir les éléments suivants installés sur votre machine :
+Before cloning this project, ensure you have the following installed on your machine:
 
-- [Node.js](https://nodejs.org/) : Plateforme permettant d'exécuter du code JavaScript côté serveur.
-- [npm](https://www.npmjs.com/) (Node Package Manager) : Gestionnaire de paquets pour Node.js, utilisé pour installer les dépendances du projet.
-- [Angular CLI](https://angular.io/cli) : Interface de ligne de commande pour Angular, qui facilite la création, le développement et le déploiement d'applications Angular.
-- [Git](https://git-scm.com/) : Système de contrôle de version utilisé pour cloner le projet et gérer les modifications du code source.
+- [Node.js](https://nodejs.org/): A platform for running JavaScript code on the server side.
+- [npm](https://www.npmjs.com/) (Node Package Manager): A package manager for Node.js, used to install project dependencies.
+- [Angular CLI](https://angular.io/cli): A command line interface for Angular that helps with creating, developing, and deploying Angular applications.
+- [Git](https://git-scm.com/): A version control system for cloning the project and managing source code changes.
 
-## Introduction
+## 🚀 Introduction
 
-Ce projet Angular est une application front-end de refonte du site de la communauté d'agglomération de La Porte du Hainaut.
-Dans ce README, nous expliquerons comment cloner le projet, l'exécuter en local, et quelques informations importantes sur la structure du projet.
+This Angular project is a frontend application for redesigning the website of the La Porte du Hainaut community. In this README, we will explain how to clone the project, run it locally, and provide some important information about the project structure.
 
-## Cloner le projet
+## 📥 Clone the Project
 
-Pour cloner ce projet sur votre machine locale, assurez-vous d'avoir Git installé. Ensuite, exécutez la commande suivante :
-
-```bash
-git clone git@github.com:paulpp78/SAE-S3-Front.git
-```
-
-Une fois le projet cloné, accédez au répertoire du projet à l'aide de la commande `cd` :
+To clone this project to your local machine, ensure Git is installed. Then run the following command:
 
 ```bash
-cd SAE-S3-Front
+git clone git@github.com:paulpp78/Redesign-Website.git
 ```
 
-## Installer les dépendances
+Once the project is cloned, navigate to the project directory using the `cd` command:
 
-Pour installer les dépendances nécessaires, exécutez la commande suivante à la racine du projet :
+```bash
+cd Redesign-Website
+```
+
+## 📦 Install Dependencies
+
+To install the necessary dependencies, run the following command at the root of the project:
 
 ```bash
 npm install
 ```
 
-## Serveur de développement
+## 🔧 Development Server
 
-Pour lancer le serveur de développement, exécutez la commande suivante :
+To start the development server, run:
 
 ```bash
 ng serve -o
 ```
 
-Cela démarrera un serveur de développement et l'application sera accessible à l'adresse : `<http://localhost:4200/`>. L'application sera automatiquement rechargée si vous modifiez des fichiers source.
+This will start a development server and the application will be accessible at `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Structure du projet
+## 🏗️ Project Structure
 
-Le projet Angular suit une structure conventionnelle qui ressemble à ceci :
+The Angular project follows a conventional structure as shown below:
 
 ```sh
-SaeFront/
+Redesign-Website/
 │
 ├── src/
 │ ├── app/
-│ │ ├── components/ # Composants de l'application
-│ │ ├── services/ # Services pour interagir avec l'API
-│ │ ├── models/ # Modèles de données
-│ │ ├── app-routing.module.ts # Configuration des routes
-│ │ ├── app.module.ts # Configuration du module principal
+│ │ ├── components/ # Application components
+│ │ ├── services/ # Services to interact with the API
+│ │ ├── models/ # Data models
+│ │ ├── app-routing.module.ts # Route configuration
+│ │ ├── app.module.ts # Main module configuration
 │ │
-│ ├── assets/ # Fichiers statiques (images, polices, etc.)
+│ ├── assets/ # Static files (images, fonts, etc.)
 │
-├── angular.json # Configuration globale du projet
-├── package.json # Liste des dépendances et scripts
-├── README.md # Ce fichier
+├── angular.json # Global project configuration
+├── package.json # Dependencies and scripts list
+├── README.md # This file
 ```
 
-## Génération de code
+## 🔨 Code Generation
 
-Angular CLI facilite la génération de composants, services et d'autres artefacts. Voici comment vous pouvez générer ces éléments :
+Angular CLI makes it easy to generate components, services, and other artifacts. Here’s how you can generate these elements:
 
-- Générer un composant :
-
-  ```bash
-  ng generate component nom-du-composant
-  ```
-
-- Générer un service :
+- Generate a component:
 
   ```bash
-  ng generate service nom-du-service
+  ng generate component component-name
   ```
 
-## Compilation du projet
+- Generate a service:
 
-Pour construire le projet pour la production, exécutez la commande suivante :
+  ```bash
+  ng generate service service-name
+  ```
+
+## 🏗️ Build the Project
+
+To build the project for production, run:
 
 ```bash
 ng build
 ```
 
-Les artefacts de construction seront stockés dans le répertoire `server/dist/`.
+The build artifacts will be stored in the `server/dist/` directory.
 
-### Serveur de production
+### 🌐 Production Server
 
-Nous avons ajouté un server nodeJS et expressJS pour la production, pour le lancer, vous devez vous rendre dans le dossier server.
+We have included a Node.js and Express.js server for production. To start the server, navigate to the server directory:
 
 ```bash
 cd server
 ```
 
-Puis vous installerez les dépendances
+Then install the dependencies:
 
 ```bash
 npm install
 ```
 
-Puis demmarez le server
+Start the server:
 
 ```bash
 npm start
 ```
 
-Cela démarrera le serveur et l'application sera accessible à l'adresse : `<http://localhost:80/`>.
+This will start the server and the application will be accessible at `http://localhost:80/`.
 
-## Tests unitaires
+## ✅ Running Unit Tests
 
-Pour exécuter les tests unitaires, utilisez la commande suivante :
+To run the unit tests, use the following command:
 
 ```bash
 ng test
 ```
 
-Cela exécutera les tests unitaires à l'aide de Karma.
+This will execute the unit tests via Karma.
 
-## Tests end-to-end
+## 🌐 Running End-to-End Tests
 
-Pour exécuter des tests end-to-end, utilisez la commande suivante :
+To run end-to-end tests, use the following command:
 
 ```bash
 ng e2e
 ```
 
-Vous devrez d'abord ajouter un package qui implémente des capacités de test end-to-end.
+You will need to add a package that implements end-to-end testing capabilities.
 
-## Besoin d'aide supplémentaire
+## 💡 Additional Help
 
-Si vous avez besoin d'aide supplémentaire sur l'utilisation de la CLI Angular, vous pouvez exécuter la commande suivante :
+If you need more help with using Angular CLI, you can run the following command:
 
 ```bash
 ng help
 ```
 
-Vous pouvez également consulter la [page Angular CLI Overview and Command Reference](https://angular.io/cli) pour plus d'informations.
+You can also refer to the [Angular CLI Overview and Command Reference](https://angular.io/cli).
